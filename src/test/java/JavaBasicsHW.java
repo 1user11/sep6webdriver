@@ -76,7 +76,8 @@ public class JavaBasicsHW {
 // 6. Write the method printFullName of student which prints the full name of a student.
 
     @Test
-    public void testFunctions() { {
+    public void testFunctions() {
+        Student[] students = {
                 new Student("Morgan", "Freeman"),
                 new Student("Brad", "Pitt"),
                 new Student("Kevin", "Spacey"),
