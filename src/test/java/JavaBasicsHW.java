@@ -77,7 +77,7 @@ public class JavaBasicsHW {
 
     @Test
     public void testFunctions() {
-        Student[] students = {
+        Student[] students = new Student[]{
                 new Student("Morgan", "Freeman"),
                 new Student("Brad", "Pitt"),
                 new Student("Kevin", "Spacey"),
