@@ -125,8 +125,7 @@ public class FirstExample {
     }
 
     public void concatString (String s1, String s2){
-
-        System.out.println(s1.concat(s2));
+          System.out.println(s1.concat(s2));
     }
 
     @Test

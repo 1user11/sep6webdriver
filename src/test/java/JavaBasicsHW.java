@@ -67,9 +67,12 @@ public class JavaBasicsHW {
         for (int i = 0; i < numbers.length; i++) {
 
             int el = numbers[i];
-            if (el == 237) break;
-            if (el % 2 == 0)
+            if (el == 237) {
+                break;
+            }
+            if (el % 2 == 0) {
                 System.out.println(el);
+            }
         }
     }
 
