@@ -2,7 +2,6 @@ import org.testng.annotations.Test;
 
 public class SecondExample {
 
-
     @Test
     public void testName() {
         int variableOne = 1;
@@ -22,7 +21,6 @@ public class SecondExample {
 
         printTwoNumbers(variableOne, variableTwo);
     }
-
 
     @Test
     public void test001() {
@@ -131,9 +129,9 @@ public class SecondExample {
             System.out.println("Car" + "[" + i + "]=" + garage[i]);
         }
 
-        for (String eachCar : garage) {
-            System.out.println("Car:" + eachCar);
-        }
+        //for (String eachCar : garage) {
+            //System.out.println("Car:" + eachCar);
+        //}
     }
 
     @Test

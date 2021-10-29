@@ -16,6 +16,8 @@ public class StudentTest {
 
         //boolean isNameCorrect = studentOne.name.contentEquals("Alex"); // name == "Alex"
         assertEquals(studentOne.name, "ALeX");
+
+
     }
 
     @Test
@@ -32,5 +34,6 @@ public class StudentTest {
         String expectedName = "StudentName001";
 
         assertEquals(studentOne.name, expectedName);
-    }
+
+      }
 }

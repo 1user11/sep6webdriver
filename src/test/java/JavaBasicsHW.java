@@ -86,7 +86,7 @@ public class JavaBasicsHW {
                 new Student("Kevin", "Spacey"),
         };
         for (Student s : students) {
-            s.printFullName();
+            s.printName();
         }
     }
 
