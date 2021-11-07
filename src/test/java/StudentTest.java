@@ -15,8 +15,7 @@ public class StudentTest {
         studentOne.graduate();
 
         //boolean isNameCorrect = studentOne.name.contentEquals("Alex"); // name == "Alex"
-        assertEquals(studentOne.name, "ALeX");
-
+        assertEquals(studentOne.name, "Alex");
 
     }
 
