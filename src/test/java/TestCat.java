@@ -15,9 +15,10 @@ public class TestCat {
             catOne.meow();
 
             assertEquals(catOne.name, "Truffle");
+
         }
 
-        @Test
+    @Test
         public void testCat2() {
             String testName = "Tiffany";
             String testBreed = "Maine Coon";
@@ -32,7 +33,6 @@ public class TestCat {
     /**
      * Tests canEat method in Cat class
      * Example of Positive test case
-     *
      */
     @Test
     public void testEatFish() {
@@ -48,7 +48,6 @@ public class TestCat {
     /**
      * Tests canEat method in Cat class
      * Example of Negative test case
-     *
      */
     @Test
     public void testEatTomato() {

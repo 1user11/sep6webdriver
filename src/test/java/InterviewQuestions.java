@@ -1,4 +1,4 @@
-import org.junit.Assert;
+import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
@@ -22,7 +22,6 @@ public class InterviewQuestions {
         for (int i = 1; i <= 10; i++) {
             if (i % 2 == 0) System.out.println(i);
         }
-
     }
 
     public void solutionHelloWorld() {
@@ -30,7 +29,6 @@ public class InterviewQuestions {
             if (i % 2 == 0) System.out.println("Hello World");
         }
     }
-
 
     @Test
     public void swapTwoNumbersInArray() {
@@ -56,7 +54,7 @@ public class InterviewQuestions {
         };
         String carToFind = "Toyota";
 
-        Assert.assertTrue(solutionForGarage(garage, carToFind));
+        assertTrue(solutionForGarage(garage, carToFind));
 
         System.out.println(Arrays.deepToString(garage));
     }
@@ -72,7 +70,7 @@ public class InterviewQuestions {
 
         boolean result = solutionForGarage(garage, carToFind);
 
-        Assert.assertFalse(result);
+       assertTrue(result);
         System.out.println(Arrays.deepToString(garage));
     }
 
@@ -103,7 +101,7 @@ public class InterviewQuestions {
 
         int expectedNumber = 3;
 
-        Assert.assertEquals(expectedNumber, amountOfFoundLetters);
+        assertEquals(expectedNumber, amountOfFoundLetters);
     }
 
     @Test
@@ -116,7 +114,7 @@ public class InterviewQuestions {
 
         int expectedNumber = 1;
 
-        Assert.assertEquals(expectedNumber, amountOfFoundLetters);
+        assertEquals(expectedNumber, amountOfFoundLetters);
     }
 
     private int solutionForLetter(String input, char letterToFind) {
