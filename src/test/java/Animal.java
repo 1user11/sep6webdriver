@@ -3,7 +3,7 @@ public class Animal {
     String name;
 
     public void sound(){
-        System.out.println("Can make some sound");
+        System.out.println("Can make some sounds");
     }
 
     public void sleep(){
