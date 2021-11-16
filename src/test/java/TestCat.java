@@ -1,59 +1,38 @@
 import org.testng.annotations.Test;
-
 import static org.testng.Assert.*;
 
 public class TestCat {
 
-        @Test
-        public void testCat1() {
-            String testName = "Truffle";
-            String testBreed = "Maine Coon";
-
-            Cat catOne = new Cat(testName, testBreed);
-
-            catOne.purr();
-            catOne.meow();
-
-            assertEquals(catOne.name, "Truffle");
-
-        }
-
     @Test
-        public void testCat2() {
-            String testName = "Tiffany";
-            String testBreed = "Maine Coon";
-
-            Cat cat = new Cat(testName, testBreed);
-
-            cat.purr();
-
-            assertEquals(cat.breed, "Maine Coon");
-        }
-
-    /**
-     * Tests canEat method in Cat class
-     * Example of Positive test case
-     */
-    @Test
-    public void testEatFish() {
-        String testName = "Tishka";
-        String testBreed = "Maine Coon";
-
-        Cat cat = new Cat(testName, testBreed);
-        cat.setFood(new String[]{"Fish", "Meat"});
-
-        assertTrue(cat.canEat("Fish"));
+    public void testCat1() {
+        String name = "Tiffany";
+        String breed = "Maine Coon";
+        Cat cat = new Cat(name, breed);
+        cat.purr();
+        cat.sound();
+        assertEquals(cat.name, "Tiffany");
     }
 
-    /**
-     * Tests canEat method in Cat class
-     * Example of Negative test case
-     */
+    @Test
+    public void testCat2() {
+        Cat cat = new Cat("Truffle", "Maine Coon");
+        cat.printCat();
+        cat.sleep();
+        assertEquals(cat.breed, "Maine Coon");
+    }
+
+    @Test
+    public void testEatFish() {
+        String name = "Tishka";
+        String breed = "Maine Coon";
+        Cat cat = new Cat(name, breed);
+        cat.setFood(new String[]{"Fish", "Meat"});
+        assertTrue(cat.eat("Meat"));
+    }
+
     @Test
     public void testEatTomato() {
-
         Cat cat = new Cat("Tishka", "Maine Coon", new String[]{"Fish", "Meat"});
-
-        assertFalse(cat.canEat("Tomato"));
+        assertFalse(cat.eat("Tomato"));
     }
 }

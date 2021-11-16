@@ -1,16 +1,15 @@
-public class Cat {
+public class Cat extends Animal {
 
-    String name;
     String breed;
     String[] food;
 
     public Cat(String name, String breed) {
-        this.name = name;
+        super.name = name;
         this.breed = breed;
     }
 
     public Cat(String name, String breed, String[] food) {
-        this.name = name;
+        super.name = name;
         this.breed = breed;
         this.food = food;
     }
@@ -27,15 +26,26 @@ public class Cat {
         System.out.println("The cat's name is " + name + " and his breed is: " + breed);
     }
 
-    public void meow() {
-        System.out.println("Cat can meow");
-    }
-
     public void purr() {
         System.out.println("Cat can purr");
     }
 
     public boolean canEat(String meal) {
+        for (String f : food) {
+            if (f.equals(meal)) return true;
+        }
+        return false;
+    }
+
+    public void sound() {
+        System.out.println("Mew");
+    }
+
+    public void sleep() {
+        System.out.println("Z-z-z");
+    }
+
+    public boolean eat(String meal) {
         for (String f : food) {
             if (f.equals(meal)) return true;
         }
