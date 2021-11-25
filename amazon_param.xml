@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Amazon Search UI test suite" verbose="1">
+    <test name="Amazon Search UI test">
+        <parameter name="key" value="hunter green curtains 84 inch length"/>
+        <classes>
+            <class name="AmazonSearchTest">
+                <methods>
+                    <include name="testSearchAndVerifyResults"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
