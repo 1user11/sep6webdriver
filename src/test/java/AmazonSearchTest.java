@@ -33,8 +33,8 @@ public class AmazonSearchTest extends TestBase {
     }
 
     private void typeQueryAndSubmit(String key) {
-        String idValue = "twotabsearchtextbox";
-        WebElement textInput = driver.findElement(By.id(idValue));
+        String xPath = "//input[@id='twotabsearchtextbox']";
+        WebElement textInput = driver.findElement(By.xpath(xPath));
         textInput.sendKeys(key);
         textInput.submit();
     }
